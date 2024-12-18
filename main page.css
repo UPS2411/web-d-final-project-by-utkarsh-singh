@@ -1,0 +1,144 @@
+body {
+  background-image: url(background.jpg);
+  background-size: cover;
+  height: 100vh;
+  margin: 0;
+  text-align: center;
+}
+nav {
+  background-color: #138de4;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Card Styling */
+.card {
+  background-image: url(card.jpg);
+  background-size: cover;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 250px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+/* Heading Styling */
+.card h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+/* Hover Effect */
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: #4059ea;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+}
+
+/* Card Styling */
+.card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 250px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  gap: 20px;
+}
+
+/* Heading Styling */
+.card h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+/* Paragraph Styling */
+.card p {
+  color: #555;
+  font-size: 1em;
+}
+
+/* Hover Effect */
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: #f8f9ff;
+}
+.container {
+  text-align: center;
+  margin: 20px;
+}
+.image-container {
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+.image-container img {
+  width: 80%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.rainbow-hover {
+  font-size: 16px;
+  font-weight: 700;
+  color: #ff7576;
+  background-color: #2b3044;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 12px 24px;
+  position: relative;
+  line-height: 24px;
+  border-radius: 9px;
+  box-shadow: 0px 1px 2px #2b3044, 0px 4px 16px #2b3044;
+  transform-style: preserve-3d;
+  transform: scale(var(--s, 1)) perspective(600px) rotateX(var(--rx, 0deg))
+    rotateY(var(--ry, 0deg));
+  perspective: 600px;
+  transition: transform 0.1s;
+  margin: 1%;
+}
+
+.sp {
+  background: linear-gradient(
+    90deg,
+    #866ee7,
+    #ea60da,
+    #ed8f57,
+    #fbd41d,
+    #2cca91
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: block;
+}
+
+.rainbow-hover:active {
+  transition: 0.3s;
+  transform: scale(0.93);
+}

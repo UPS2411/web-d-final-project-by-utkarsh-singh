@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>booking</title>
+    <link rel="stylesheet" href="booking.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Event Booking</h2>
+      <form id="bookingForm">
+        <label for="location">Location</label>
+        <select id="location" required>
+          <option value="">Select Location</option>
+          <option value="New Delhi">New Delhi</option>
+          <option value="Chennai">Chennai</option>
+          <option value="Gorakpur">Gorakpur</option>
+          <option value="Gurgaon">Gurgaon</option>
+          <option value="Lucknow">Lucknow</option>
+          <option value="Prayagraj">Prayagraj</option>
+          <option value="Mumbai">Mumbai</option>
+          <option value="Bengaluru">Bengaluru</option>
+          <option value="Kolkata">Kolakata</option>
+        </select>
+
+        <label for="venue">venue</label>
+        <select id="venue" required>
+          <option value="">Select Hall</option>
+          <option value="venue 1">venue 1</option>
+          <option value="venue 2">venue 2</option>
+          <option value="venue 3">venue 3</option>
+        </select>
+
+        <label for="capacity">Seating Capacity</label>
+        <select id="capacity" required>
+          <option value="">Select Capacity</option>
+          <option value="50">50 People</option>
+          <option value="100">100 People</option>
+          <option value="200">200 People</option>
+        </select>
+
+        <label for="food">Food Type</label>
+        <select id="food" required>
+          <option value="">Select Food Type</option>
+          <option value="Vegetarian">Vegetarian</option>
+          <option value="Non-Vegetarian">Non-Vegetarian</option>
+          <option value="Both">Both</option>
+        </select>
+
+        <label for="time">Time</label>
+        <select id="time" required>
+          <option value="">Select Time</option>
+          <option value="Morning">Morning</option>
+          <option value="Evening">Evening</option>
+          <option value="Night">Night</option>
+        </select>
+
+        <label for="date">Date</label>
+        <input type="date" id="date" required />
+
+        <button type="button" onclick="bookEvent()">Book Now</button>
+      </form>
+    </div>
+    <script src="booking.js"></script>
+  </body>
+</html>

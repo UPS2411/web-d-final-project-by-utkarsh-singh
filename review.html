@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>review</title>
+    <link rel="stylesheet" href="review.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>What People Say About Eventer</h1>
+
+      <div class="review">
+        <h3>Rahul Mehta</h3>
+        <p>
+          "Eventer made my wedding the most memorable day of my life. The team
+          was professional, and everything went perfectly!"
+        </p>
+      </div>
+
+      <div class="review">
+        <h3>Priya Sharma</h3>
+        <p>
+          "We hired Eventer for our corporate annual event. The planning and
+          execution were flawless. Highly recommend them!"
+        </p>
+      </div>
+
+      <div class="review">
+        <h3>Vikram Singh</h3>
+        <p>
+          "Eventer is the best event management company I've worked with. They
+          handled everything for my daughter's birthday party with great
+          attention to detail."
+        </p>
+      </div>
+
+      <div class="center">
+        <button class="btn" onclick="openModal()">Leave a Review</button>
+      </div>
+    </div>
+
+    <div class="modal" id="reviewModal">
+      <div class="modal-content">
+        <h2>Submit Your Review</h2>
+        <input type="text" id="name" placeholder="Your Name" required />
+        <textarea
+          id="review"
+          rows="4"
+          placeholder="Your Review"
+          required
+        ></textarea>
+        <button class="submit-btn" onclick="submitReview()">
+          Submit Review
+        </button>
+        <button class="close-btn" onclick="closeModal()">Close</button>
+      </div>
+    </div>
+    <script src="review.js"></script>
+  </body>
+</html>

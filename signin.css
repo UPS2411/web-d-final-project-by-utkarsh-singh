@@ -1,0 +1,23 @@
+body {
+  background-image: url(background.jpg);
+  background-size: cover;
+  height: 100vh;
+  margin: 0;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-box {
+  background-color: #41b0e0;
+  padding: 20px 30px;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(23, 16, 218, 0.2);
+}
